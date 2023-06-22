@@ -1,0 +1,34 @@
+body {
+    --bg-color: #FFFFFF;
+    --bg-secondary-color: #2F7B80;
+    --text-color: #000000;
+    --text-secondary-color: #828282;
+    --separator-color: #828282;
+    --base-font-size: 18px;
+    --base-line-height: 22px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+}
+
+.header-log,.header-nav a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+    list-style: none;
+    margin: 0;
+}
+
+.header-log a {
+    text-decoration: none;
+}
+
+.logo_img{
+    margin-right: -100px;
+    margin-left: 60px;
+}
