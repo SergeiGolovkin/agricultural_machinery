@@ -4,8 +4,9 @@ body {
     --text-color: #000000;
     --text-secondary-color: #828282;
     --separator-color: #828282;
-    --base-font-size: 18px;
-    --base-line-height: 22px;
+    --base-font-size: 16px;
+    --base-line-height: 20px;
+    --p-font-size:48px;
 }
 
 html,
@@ -15,7 +16,7 @@ body {
     background: var(--bg-color);
 }
 
-.header-log,.header-nav a{
+.header-log, nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,12 +24,58 @@ body {
     list-style: none;
     margin: 0;
 }
-
-.header-log a {
+/**
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+    list-style: none;
+    margin: 0; 
+}
+**/
+.header-log button{
+    background-color: #E10B20;
+    border-radius: 5px;
+    width: 259px;
+    height: 65px;
+}
+.header-log a, nav a{
     text-decoration: none;
 }
 
-.logo_img{
-    margin-right: -100px;
-    margin-left: 60px;
+h1, h2{
+    font-size: var(--p-font-size);
+}
+nav {
+    background-color: var(--bg-secondary-color);
+    font-size: var(--base-line-height);
+    color: var(--bg-color);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+nav a {
+    color: var(--bg-color);
+}
+.fon-img {
+    background-image: url(../img/home-img/angar-svinarnik-1.jpg);
+    background-size: cover;
+}
+.contener-img {
+    width: 100%;
+}
+.header-log img:first-child {
+    float:left;
+  }
+section{
+    display: flex;
+    justify-content: center;
+}
+.border_telephone{
+    border: #FFFFFF;
+}
+.contener{
+    margin: 60px;
 }
