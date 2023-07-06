@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural_machinery</title>
     <link rel="stylesheet" href="css/agro_tehnika.css">
+    <script defer src="./js/mainButton.js"></script>
 </head>
+
 
 <body>
     <header>
-        <div>
+        <div class="contener">
             <ul class="header-log">
                 <li><a href="#"><img width="106" height="67" src="./img/heder-futer-img/logo.png" alt="logo">Ангары
                         и<br>сельхозтехника<br>от производителя</a></li>
@@ -28,20 +30,24 @@
             </ul>
         </div>
         <nav>
-            <ul class="header-nav">
-                <li><a href="#">АНГАРЫ</a></li>
-                <li><a href="#">СЕЛЬХОЗТЕХНИКА</a></li>
-                <li><a href="#">ЗАПЧАСТИ</a></li>
-                <li><a href="#">УСЛУГИ</a></li>
-                <li><a href="#">О КОМПАНИИ</a></li>
-                <li><a href="#">О КОНТАКТЫ</a></li>
-                <li><a href="#">О НАШИ РАБОТЫ</a></li>
-            </ul>
+            <div class="header-nav">
+                <div class="contener">
+                    <ul>
+                        <li><a href="#">АНГАРЫ</a></li>
+                        <li><a href="#">СЕЛЬХОЗТЕХНИКА</a></li>
+                        <li><a href="#">ЗАПЧАСТИ</a></li>
+                        <li><a href="#">УСЛУГИ</a></li>
+                        <li><a href="#">О КОМПАНИИ</a></li>
+                        <li><a href="#">О КОНТАКТЫ</a></li>
+                        <li><a href="#">О НАШИ РАБОТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="contener-img">
-            <div class="fon-img">
+        <div class="img_background">
+            <div class="contener">
                 <h1>ИДЕАЛЬНЫЕ АНГАРЫ <br>ЗАВОДСКОГО ИЗГОТОВЛЕНИЯ</h1>
                 <div>
                     (Ангары, Бороны, Опрыскиватели, Сельхозтехника, Запчасти)
@@ -73,70 +79,246 @@
             </div>
         </div>
         <div class="contener">
-            <h2>ЧТО СТРОИМ</h2>
-            <div>
-                <ul class="main_nav">
-                    <li><a href="#">Ангары бескаркасные</a></li>
-                    <li><a href="#">Каркасные ангары</a></li>
-                    <li><a href="#">Ангары тентовые</a></li>
-                    <li><a href="#">Ремонт и реконструкция ангаров</a></li>
-                    <li><a href="#">Изготовление металлоконструкций</a></li>
-                </ul>
-            </div>
-            <section>
-                <div>
-                    <img width="645" height="638" src="./img/home-img/angar-svinarnik-2.jpg" alt="angar-svinarnik">
+            <div class="tabbar">
+                <h2>ЧТО СТРОИМ</h2>
+                <div class="button_controls">
+                    <button data-tab="frameless" class="button_main_color">Ангары <br>бескаркасные</button>
+                    <button data-tab="frame">Каркасные ангары</button>
+                    <button data-tab="awning">Ангары тентовые</button>
+                    <button data-tab="repair">Ремонт и <br>реконструкция ангаров</button>
+                    <button data-tab="manufacturing">Изготовление металлоконструкций</button>
                 </div>
-                <div>
-                    <h3>Ангары бескаркасные</h3>
-                    <ul class="list_two_colomn">
-                        <li>
-                            <ul>
-                                <li><a href="#">Бескаркасные ангары-свинарники</a></li>
-                                <li><a href="#">Бескаркасные зернохранилища</a></li>
-                                <li><a href="#">Бескаркасные склады, гаражи</a></li>
-                                <li><a href="#">Производственные бескаркасные сооружения</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li><a href="#">Бескаркасные навесы</a></li>
-                                <li><a href="#">Бескаркасные овощехранилища</a></li>
-                                <li><a href="#">Ангары для животноводства</a></li>
-                                <li><a href="#">Авиационные ангары</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div>
-                        <div><img width="41" height="42" src="./img/home-img/height.svg">От 12 до 28 метров</div>
-                        <div><img width="42" height="42" src="./img/home-img/termometr.svg">Утепление пенополиуретаном
-                        </div>
-                        <div><img width="41" height="42" src="./img/home-img/fan.svg">Монтаж системы вентиляции</div>
+                <section id="frameless" class="tabor_class visible">
+                    <div class="img-desktop">
+                        <img width="645" height="638" src="./img/home-img/angar-svinarnik-2.jpg" alt="angar-svinarnik">
                     </div>
-                    <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
                     <div>
-                        <h4>Получить расчет:</h4>
-                        <p>Ваш телефон*</p>
+                        <h3>Ангары бескаркасные</h3>
+                        <ul class="list_two_colomn list_colomn_left">
+                            <li>
+                                <ul class="list_colomn_left">
+                                    <li><a href="#">Бескаркасные ангары-свинарники</a></li>
+                                    <li><a href="#">Бескаркасные зернохранилища</a></li>
+                                    <li><a href="#">Бескаркасные склады, гаражи</a></li>
+                                    <li><a href="#">Производственные бескаркасные сооружения</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#">Бескаркасные навесы</a></li>
+                                    <li><a href="#">Бескаркасные овощехранилища</a></li>
+                                    <li><a href="#">Ангары для животноводства</a></li>
+                                    <li><a href="#">Авиационные ангары</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="colomn_gorizont">
+                            <div><img width="41" height="42" src="./img/home-img/height.svg">От 12 до 28<br> метров
+                            </div>
+                            <div><img width="42" height="42" src="./img/home-img/termometr.svg">Утепление
+                                <br>пенополиуретаном
+                            </div>
+                            <div><img width="41" height="42" src="./img/home-img/fan.svg">Монтаж системы <br>вентиляции
+                            </div>
+                        </div>
+                        <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
                         <div>
-                            <div>+7 ( ___ ) ___ - __ - __</div>
-                            <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
-                                    <g filter="url(#filter0_d_45_26)">
-                                        <path
-                                            d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
-                                            fill="white" />
-                                    </g>
-                                </svg></button>
-                            <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            <h4>Получить расчет:</h4>
+                            <p>Ваш телефон*</p>
+                            <div>
+                                <div>+7 ( ___ ) ___ - __ - __</div>
+                                <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_45_26)">
+                                            <path
+                                                d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg></button>
+                                <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            </div>
                         </div>
+                        <p>Преимущества бескаркасных ангаров:</p>
+                        <ul>
+                            <li>Быстрая окупаемость проекта</li>
+                            <li>Скорость строительства (20 дней)</li>
+                            <li>Герметичность и прочность конструкции</li>
+                        </ul>
                     </div>
-                    <p>Преимущества бескаркасных ангаров:</p>
-                    <ul>
-                        <li>Быстрая окупаемость проекта</li>
-                        <li>Скорость строительства (20 дней)</li>
-                        <li>Герметичность и прочность конструкции</li>
-                    </ul>
-                </div>
-            </section>
+                </section>
+                <section id="frame" class="tabor_class">
+                    <div class="img-desktop">
+                        <img width="645" height="682" src="./img/main-img/frame.jpg" alt="angar-frame">
+                    </div>
+                    <div>
+                        <h3>Каркасные ангары</h3>
+                        <ul class="list_two_colomn list_colomn_left">
+                            <li>
+                                <ul class="list_colomn_left">
+                                    <li><a href="#">Каркасные ангары</a></li>
+                                    <li><a href="#">Тока, каркасные навесы</a></li>
+                                    <li><a href="#">Прямостенные ангары</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#">Автомойки и автосервисы</a></li>
+                                    <li><a href="#">Магазины</a></li>
+                                    <li><a href="#">Навесы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="colomn_gorizont">
+                            <div><img width="41" height="42" src="./img/home-img/height.svg">От 12 до 28<br> метров
+                            </div>
+                            <div><img width="42" height="42" src="./img/main-img/sewage.svg">Монтаж системы<br>
+                                водоотлива<br>
+                                (опционально)
+                            </div>
+                            <div><img width="41" height="42" src="./img/main-img/drain.svg">Зашивка боковых <br>стен
+                                (опционально)
+                            </div>
+                        </div>
+                        <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
+                        <div>
+                            <h4>Получить расчет:</h4>
+                            <p>Ваш телефон*</p>
+                            <div>
+                                <div>+7 ( ___ ) ___ - __ - __</div>
+                                <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_45_26)">
+                                            <path
+                                                d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg></button>
+                                <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            </div>
+                        </div>
+                        <p>Каркасные навесы:</p>
+                        <ol>
+                            <li>Скорость строительства (от 25 дней)</li>
+                            <li>Заказчик может выбрать цвет зашивки стен</li>
+                            <li>Возможность утепления закрытого сооружения</li>
+                            <li>Удобство загрузки и выгрузки продукции за счёт широких <br>проездов</li>
+                            <li>Возможность выбора профиля зашивки кровли и боковых <br>стен в зависимости от назначения
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="awning" class="tabor_class">
+                    <div class="img-desktop">
+                        <img width="645" height="551" src="./img/main-img/awning.jpg" alt="angar-awning">
+                    </div>
+                    <div>
+                        <h3>Тентовые ангары</h3>
+                        <div class="colomn_gorizont">
+                            <div><img width="41" height="42" src="./img/home-img/height.svg">От 12 до 14<br> метров
+                            </div>
+                        </div>
+                        <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
+                        <div>
+                            <h4>Получить расчет:</h4>
+                            <p>Ваш телефон*</p>
+                            <div>
+                                <div>+7 ( ___ ) ___ - __ - __</div>
+                                <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_45_26)">
+                                            <path
+                                                d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg></button>
+                                <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            </div>
+                        </div>
+                        <p>Тентовые ангары – наиболее оптимальный вариант <br>строительства, если:</p>
+                        <ul>
+                            <li>Вам нужно выставочное помещение;</li>
+                            <li>Вам нужна временная и мобильная постройка;</li>
+                            <li>У Вас ограниченный бюджет и поджимают сроки;</li>
+                            <li>Нужна постройка на охраняемой территории.</li>
+                            <li>Материал тента максимально устойчив к воздействиям <br>окружающей среды, в т.ч.,
+                                солнечного
+                                излучения, морозов, <br>сильных ветров и осадков.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="repair" class="tabor_class">
+                    <div class="img-desktop">
+                        <img width="645" height="496" src="./img/main-img/uslugi.jpg" alt="photo uslugi">
+                    </div>
+                    <div>
+                        <h3>Изготовление металлоконструкций</h3>
+                        <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
+                        <div>
+                            <h4>Получить расчет:</h4>
+                            <p>Ваш телефон*</p>
+                            <div>
+                                <div>+7 ( ___ ) ___ - __ - __</div>
+                                <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_45_26)">
+                                            <path
+                                                d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg></button>
+                                <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            </div>
+                        </div>
+                        <p>Широкий спектр производственных услуг по <br>изготовлению деталей:</p>
+                        <ul>
+                            <li>гибка листового металла;</li>
+                            <li>порошковая покраска в любой цвет;</li>
+                            <li>раскрой листового металла;</li>
+                            <li>слесарные, сборочные и сварочные работы;</li>
+                            <li>токарные работы по чертежам.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="manufacturing" class="tabor_class">
+                    <div class="img-desktop">
+                        <img width="645" height="610" src="./img/main-img/angar-remont.jpg" alt="remont angarov">
+                    </div>
+                    <div>
+                        <h3>Ангары бескаркасные</h3>
+
+                        <div class="colomn_gorizont">
+                            <div><img width="41" height="42" src="./img/home-img/height.svg">От 12 до 28<br> метров
+                            </div>
+                            <div><img width="42" height="42" src="./img/home-img/termometr.svg">Утепление
+                                <br>пенополиуретаном
+                            </div>
+                            <div><img width="41" height="42" src="./img/home-img/fan.svg">Монтаж системы
+                                <br>вентиляции
+                            </div>
+                        </div>
+                        <p>Цена рассчитывается индивидуально по согласованному техническому заданию</p>
+                        <div>
+                            <h4>Получить расчет:</h4>
+                            <p>Ваш телефон*</p>
+                            <div>
+                                <div>+7 ( ___ ) ___ - __ - __</div>
+                                <button>Отправить<svg width="17.8" height="17" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_45_26)">
+                                            <path
+                                                d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg></button>
+                                <button><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                            </div>
+                        </div>
+                        <p>В зависимости от назначения сооружения, могут быть выполнены следующие виды работ:</p>
+                        <ul>
+                            <li>Установка естественного освещения.</li>
+                            <li>Монтаж естественной системы вентиляции.</li>
+                            <li>Монтаж приточной и принудительной систем вентиляции.</li>
+                            <li>Утепление сооружения.</li>
+                            <li>Какие-либо другие виды работ, требуемые Заказчиком.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
         <div class="contener">
             <div>
@@ -151,7 +333,7 @@
                     </ul>
                 </div>
                 <section>
-                    <div>
+                    <div class="img-desktop">
                         <img width="645" height="404" src="./img/home-img/borona-1.jpg" alt="borona">
                     </div>
                     <div>
@@ -262,7 +444,7 @@
                 <img width="312" height="300" src="./img/home-img/angar-korovniki-1.jpg" alt="photo angar korovnik">
             </div>
         </div>
-        <div>
+        <div class="contener">
             <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages">
                 <div>
@@ -320,7 +502,7 @@
         </div>
     </main>
     <futer>
-        <div>
+        <div class="contener">
             <div>
                 <div>
                     <img src="./img/heder-futer-img/logo.png" alt="">
