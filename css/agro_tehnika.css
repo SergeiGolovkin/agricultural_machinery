@@ -18,7 +18,7 @@ body {
     background: var(--bg-color);
 }
 
-.header-log,
+.header_log,
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ nav ul{
     margin: 0; 
 }
 **/
-.header-log button {
+.header_log button {
     background-color: var(--bg-button);
     border-radius: 5px;
     max-width: 259px;
@@ -47,7 +47,7 @@ nav ul{
     padding-left: 23px;
 }
 
-.header-log a,
+.header_log a,
 nav a {
     text-decoration: none;
 }
@@ -63,7 +63,7 @@ nav li {
     margin-right: 22px;
 }
 
-.header-nav {
+.header_nav {
     display: flex;
     align-items: center;
     background-color: var(--bg-secondary-color);
@@ -86,18 +86,22 @@ nav a {
     filter: brightness(40%)
 }
 
-.header-log a {
+.img_background_number{
+    display: flex;
+}
+
+.header_log a {
     font-size: var(--base-font-size);
     color: var(--text-color);
 }
 
-.header-log li:first-child {
+.header_log li:first-child {
     float: left;
     margin-right: -112px;
 
 }
 
-.phone-header a {
+.phone_header a {
     color: var(--text-color);
     font-size: var(--phone-size);
 }
@@ -169,13 +173,13 @@ ul.main_nav li {
     display: flex;
 }
 
-.img-desktop>img {
+.img_desktop>img {
     width: 100%;
     height: auto;
     float: left;
 }
 
-.img-desktop {
+.img_desktop {
     padding-right: 30px;
 }
 
@@ -224,51 +228,51 @@ ul.main_nav li {
 }
 
 /** кнопка телефона**/
-.phone-main {
+.phone_main {
     background-color: var(--bg-secondary-color);
     padding: 8px;
     border-radius: 6px;
 }
 
-.phone-main a {
+.phone_main a {
     text-decoration: none;
     color: var(--bg-color);
     size: var(--base-line-height);
 }
 
 /** кнопка отправить **/
-.send-main {
+.send_main {
     background-color: var(--bg-button);
     padding: 8px;
     border-radius: 6px;
 
 }
 
-.number-entry {
+.number_entry {
     border: 2px solid transparent;
-    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-.number-entry input {
+.number_entry input {
     opacity: 40%;
+    background-color: var(--bg-color);
 }
 
 /** блок подержки**/
-.block-color {
+.block_color {
     background: #B5D7D9;
     text-align: center;
 }
 /** блок о нас**/
-.about-us{
+.about_us{
     display: flex;
 }
-.about-us p{
+.about_us p{
     font-size: 24px;
 }
-.img-float-left{
+.img_float_left{
     display: flex;
 }
-.img-float-left h3{
+.img_float_left h3{
 font-size: 24px;
 }
