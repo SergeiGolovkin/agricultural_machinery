@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
         tab.addEventListener("click", function(event){
 
-            parentTabbar.querySelectorAll(".tabor_class button").forEach(function(otherTab){
+            parentTabbar.querySelectorAll(".button_controls button").forEach(function(otherTab){
                 otherTab.classList.remove("button_main_color");
             });
 

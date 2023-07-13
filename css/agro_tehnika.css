@@ -4,9 +4,11 @@ body {
     --text-color: #000000;
     --text-secondary-color: #828282;
     --separator-color: #828282;
+    --bg-button: #E10B20;
     --base-font-size: 16px;
     --base-line-height: 20px;
     --p-font-size: 48px;
+    --phone-size: 28px;
 }
 
 html,
@@ -37,10 +39,12 @@ nav ul{
 }
 **/
 .header-log button {
-    background-color: #E10B20;
+    background-color: var(--bg-button);
     border-radius: 5px;
-    width: 259px;
+    max-width: 259px;
     height: 65px;
+    padding-right: 23px;
+    padding-left: 23px;
 }
 
 .header-log a,
@@ -79,10 +83,23 @@ nav a {
     background-size: cover;
     background-position: center;
     color: var(--bg-color);
+    filter: brightness(40%)
 }
 
-.header-log img:first-child {
+.header-log a {
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+}
+
+.header-log li:first-child {
     float: left;
+    margin-right: -112px;
+
+}
+
+.phone-header a {
+    color: var(--text-color);
+    font-size: var(--phone-size);
 }
 
 section {
@@ -165,6 +182,7 @@ ul.main_nav li {
 /** кнопки навигации**/
 .button_controls {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .button_controls>button {
@@ -186,18 +204,71 @@ ul.main_nav li {
 .button_controls button:last-child {
     margin-right: 0;
 }
-.button_main_color{
+
+.button_main_color {
     background: var(--bg-secondary-color);
 }
-.button_controls > button.button_main_color {
+
+.button_controls>button.button_main_color {
     font-weight: bold;
-    background:var(--bg-secondary-color);
+    background: var(--bg-secondary-color);
     color: var(--bg-color);
 }
-.tabor_class{
+
+.tabor_class {
     display: none;
 }
 
-.tabor_class.visible{
+.tabor_class.visible {
     display: flex;
+}
+
+/** кнопка телефона**/
+.phone-main {
+    background-color: var(--bg-secondary-color);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.phone-main a {
+    text-decoration: none;
+    color: var(--bg-color);
+    size: var(--base-line-height);
+}
+
+/** кнопка отправить **/
+.send-main {
+    background-color: var(--bg-button);
+    padding: 8px;
+    border-radius: 6px;
+
+}
+
+.number-entry {
+    border: 2px solid transparent;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.number-entry input {
+    opacity: 40%;
+}
+
+/** блок подержки**/
+.block-color {
+    background: #B5D7D9;
+    text-align: center;
+}
+/** блок о нас**/
+.about-us{
+    display: flex;
+}
+.about-us p{
+    font-size: 24px;
+}
+.img-float-left{
+    display: flex;
+}
+.img-float-left h3{
+font-size: 24px;
 }
