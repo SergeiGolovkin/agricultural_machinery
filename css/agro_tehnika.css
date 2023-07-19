@@ -410,7 +410,8 @@ ul.main_nav li {
 /** мобильная версия **/
 .mobile_icon,
 .mobile_header_log,
-.header_log_head {
+.mobile_header_log_head
+ {
     display: none;
     border: 0;
     background: none;
@@ -430,7 +431,7 @@ ul.main_nav li {
         display: block;
     }
 
-    .header_log_head {
+    .mobile_header_log_head {
         display: flex;
     }
 
@@ -479,6 +480,21 @@ ul.main_nav li {
 /** планшетная **/
 @media (max-width :1190px) {
     .about_us {
+        display: block;
+    }
+    .list_two_colomn {
+        display: block;
+    }
+
+    .list_two_colomn ul {
+        padding-inline-start: 0px;
+    }
+
+    .tabor_class.visible {
+        flex-wrap: wrap;
+    }
+
+    .colomn_gorizont {
         display: block;
     }
 }
