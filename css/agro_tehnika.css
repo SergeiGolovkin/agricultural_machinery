@@ -11,19 +11,23 @@ body {
     --phone-size: 28px;
     --phone-entry-size: 18px;
 }
-h4{
+
+h4 {
     font-size: 24px;
 }
+
 html,
 body {
     margin: 0;
     padding: 0;
     background: var(--bg-color);
-    font-family: "Inter-V",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: "Inter-V", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body button{
+
+body button {
     border-radius: 5px;
 }
+
 .header_log,
 nav ul {
     display: flex;
@@ -37,15 +41,18 @@ nav ul {
     margin: 0;
 }
 
-.head_aside h1{
+.head_aside h1 {
     padding-top: 90px;
 }
-.head_aside p:first-child{
+
+.head_aside p:first-child {
     padding-top: 18px;
 }
-.consultation{
+
+.consultation {
     font-size: 32px;
 }
+
 /**
 nav ul{
     display: flex;
@@ -76,7 +83,8 @@ h2 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-h2{
+
+h2 {
     padding-top: 45px;
 }
 
@@ -97,10 +105,12 @@ nav li {
 nav a {
     color: var(--bg-color);
 }
-aside{
+
+aside {
     position: relative;
     color: var(--bg-color);
 }
+
 .img_background {
     height: 100%;
     width: 100%;
@@ -110,10 +120,12 @@ aside{
     color: var(--bg-color);
     filter: brightness(40%)
 }
-.img_background{
+
+.img_background {
     position: absolute;
 }
-.contener{
+
+.contener {
     position: relative;
     z-index: 1;
     max-width: 1360px;
@@ -129,12 +141,14 @@ aside{
     color: var(--text-color);
 }
 
-.header_log{
+.header_log {
     display: flex;
 }
-.header_log_head{
+
+.header_log_head {
     display: flex;
 }
+
 /*.header_log li:first-child {
     float: left;
     margin-right: -112px;
@@ -263,7 +277,7 @@ ul.main_nav li {
 
 .tabor_class.visible {
     display: flex;
-    
+
 }
 
 /** кнопка телефона**/
@@ -286,6 +300,7 @@ ul.main_nav li {
     border-radius: 5px;
 
 }
+
 /** набор номера **/
 .number_entry {
     border: 2px solid transparent;
@@ -301,12 +316,15 @@ ul.main_nav li {
 .border_telephone {
     border: #FFFFFF;
 }
-.futer_questions>.border_telephone{
-min-width:fit-content
+
+.futer_questions>.border_telephone {
+    min-width: fit-content
 }
-.border_telephone input{
+
+.border_telephone input {
     width: 272px;
 }
+
 /** блок подержки**/
 .block_color {
     background: #B5D7D9;
@@ -329,51 +347,140 @@ min-width:fit-content
 .img_float_left h3 {
     font-size: 24px;
 }
-.photo_contener{
+
+.photo_contener {
     position: relative;
 }
 
 /** futer **/
 
-.futer_culomn{
+.futer_culomn {
     display: flex;
     justify-content: space-between;
 }
-.futer_background{
+
+.futer_background {
     background-color: #5A7678;
-    color:#FFFFFF;
-    
+    color: #FFFFFF;
+
 }
-.futer_culomn a{
+
+.futer_culomn a {
     text-decoration: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
-.futer_culomn div:nth-child(1){
+
+.futer_culomn div:nth-child(1) {
     max-width: 240px;
 }
-.futer_culomn div:nth-child(2){
+
+.futer_culomn div:nth-child(2) {
     max-width: 194px;
 }
-.futer_culomn div:nth-child(3){
+
+.futer_culomn div:nth-child(3) {
     max-width: 226px
 }
-.futer_culomn div:nth-child(4){
+
+.futer_culomn div:nth-child(4) {
     max-width: 279px;
 }
-.futer_logo,.futer_mailWatsap{
+
+.futer_logo,
+.futer_mailWatsap {
     display: flex;
 }
-.futer_mailWatsap{
+
+.futer_mailWatsap {
     display: flex;
     flex-flow: column wrap;
 }
-.futer_culomn>div{
+
+.futer_culomn>div {
     display: flex;
     flex-flow: column wrap;
     padding-top: 49px;
 }
-.futer_culomn>div>h5,.futer_culomn>div>h4{
+
+.futer_culomn>div>h5,
+.futer_culomn>div>h4 {
     margin-top: 0;
+}
+
+/** мобильная версия **/
+.mobile_icon,
+.mobile_header_log,
+.header_log_head {
+    display: none;
+    border: 0;
+    background: none;
+}
+
+.mobile_icon {
+    float: right;
+}
+
+@media (max-width :375px) {
+    .header_log {
+        display: none;
+
+    }
+
+    .mobile_icon {
+        display: block;
+    }
+
+    .header_log_head {
+        display: flex;
+    }
+
+    .header_nav ul {
+        flex-wrap: nowrap;
+    }
+
+    .list_two_colomn {
+        display: block;
+    }
+
+    .list_two_colomn ul {
+        padding-inline-start: 0px;
+    }
+
+    .tabor_class.visible {
+        flex-wrap: wrap;
+    }
+
+    .colomn_gorizont {
+        display: block;
+    }
+
+    .img_desktop {
+        padding: 0;
+    }
+
+    .img_desktop img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .photo_contener {
+        display: none;
+    }
+
+    .futer_culomn {
+        display: block;
+    }
+
+    .photo_desktop {
+        display: none;
+    }
+}
+
+/** планшетная **/
+@media (max-width :1190px) {
+    .about_us {
+        display: block;
+    }
 }
 
 /** шрифт inter**/
