@@ -9,18 +9,27 @@ body {
     --base-line-height: 20px;
     --p-font-size: 48px;
     --phone-size: 28px;
+    --phone-entry-size: 18px;
 }
-
+h4{
+    font-size: 24px;
+}
 html,
 body {
     margin: 0;
     padding: 0;
     background: var(--bg-color);
+    font-family: "Inter-V",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
-
+body button{
+    border-radius: 5px;
+}
 .header_log,
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 51px;
     justify-content: space-between;
     align-items: center;
     padding: 0 0;
@@ -28,6 +37,15 @@ nav ul {
     margin: 0;
 }
 
+.head_aside h1{
+    padding-top: 90px;
+}
+.head_aside p:first-child{
+    padding-top: 18px;
+}
+.consultation{
+    font-size: 32px;
+}
 /**
 nav ul{
     display: flex;
@@ -58,6 +76,9 @@ h2 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
+h2{
+    padding-top: 45px;
+}
 
 nav li {
     margin-right: 22px;
@@ -70,14 +91,18 @@ nav li {
     font-size: var(--base-line-height);
     color: var(--bg-color);
     width: auto;
-    height: 65px;
+    padding: 20px 0;
 }
 
 nav a {
     color: var(--bg-color);
 }
-
+aside{
+    position: relative;
+    color: var(--bg-color);
+}
 .img_background {
+    height: 100%;
     width: 100%;
     background-image: url(../img/home-img/angar-svinarnik-1.jpg);
     background-size: cover;
@@ -85,8 +110,17 @@ nav a {
     color: var(--bg-color);
     filter: brightness(40%)
 }
+.img_background{
+    position: absolute;
+}
+.contener{
+    position: relative;
+    z-index: 1;
+    max-width: 1360px;
+    margin: 0 auto;
+}
 
-.img_background_number{
+.img_background_number {
     display: flex;
 }
 
@@ -95,11 +129,17 @@ nav a {
     color: var(--text-color);
 }
 
-.header_log li:first-child {
+.header_log{
+    display: flex;
+}
+.header_log_head{
+    display: flex;
+}
+/*.header_log li:first-child {
     float: left;
     margin-right: -112px;
 
-}
+}*/
 
 .phone_header a {
     color: var(--text-color);
@@ -111,14 +151,12 @@ section {
     justify-content: center;
 }
 
-.border_telephone {
-    border: #FFFFFF;
-}
 
-.contener {
+
+/*.contener {
     margin-left: 60px;
     margin-right: 60px;
-}
+}*/
 
 .list_two_colomn {
     display: flex;
@@ -136,14 +174,14 @@ section {
 }
 
 ul.list_colomn_left {
-    float: left;
     padding: 0;
 }
 
 .colomn_gorizont {
     display: inline-flex;
     justify-content: center;
-
+    gap: 100px;
+    font-weight: 600;
 }
 
 .main_nav {
@@ -174,9 +212,8 @@ ul.main_nav li {
 }
 
 .img_desktop>img {
-    width: 100%;
+    width: 645;
     height: auto;
-    float: left;
 }
 
 .img_desktop {
@@ -221,10 +258,12 @@ ul.main_nav li {
 
 .tabor_class {
     display: none;
+    justify-content: flex-start;
 }
 
 .tabor_class.visible {
     display: flex;
+    
 }
 
 /** кнопка телефона**/
@@ -244,13 +283,14 @@ ul.main_nav li {
 .send_main {
     background-color: var(--bg-button);
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 5px;
 
 }
-
+/** набор номера **/
 .number_entry {
     border: 2px solid transparent;
     color: var(--text-color);
+    font-size: var(--phone-entry-size);
 }
 
 .number_entry input {
@@ -258,21 +298,88 @@ ul.main_nav li {
     background-color: var(--bg-color);
 }
 
+.border_telephone {
+    border: #FFFFFF;
+}
+.futer_questions>.border_telephone{
+min-width:fit-content
+}
+.border_telephone input{
+    width: 272px;
+}
 /** блок подержки**/
 .block_color {
     background: #B5D7D9;
     text-align: center;
 }
+
 /** блок о нас**/
-.about_us{
+.about_us {
     display: flex;
 }
-.about_us p{
+
+.about_us p {
     font-size: 24px;
 }
-.img_float_left{
+
+.img_float_left {
     display: flex;
 }
-.img_float_left h3{
-font-size: 24px;
+
+.img_float_left h3 {
+    font-size: 24px;
+}
+.photo_contener{
+    position: relative;
+}
+
+/** futer **/
+
+.futer_culomn{
+    display: flex;
+    justify-content: space-between;
+}
+.futer_background{
+    background-color: #5A7678;
+    color:#FFFFFF;
+    
+}
+.futer_culomn a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.futer_culomn div:nth-child(1){
+    max-width: 240px;
+}
+.futer_culomn div:nth-child(2){
+    max-width: 194px;
+}
+.futer_culomn div:nth-child(3){
+    max-width: 226px
+}
+.futer_culomn div:nth-child(4){
+    max-width: 279px;
+}
+.futer_logo,.futer_mailWatsap{
+    display: flex;
+}
+.futer_mailWatsap{
+    display: flex;
+    flex-flow: column wrap;
+}
+.futer_culomn>div{
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 49px;
+}
+.futer_culomn>div>h5,.futer_culomn>div>h4{
+    margin-top: 0;
+}
+
+/** шрифт inter**/
+@font-face {
+    font-family: "Inter-V";
+    src: url("../fonts/Inter-V.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
