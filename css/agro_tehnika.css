@@ -134,6 +134,7 @@ aside {
 
 .img_background_number {
     display: flex;
+    padding-bottom: 50px;
 }
 
 .header_log a {
@@ -226,13 +227,13 @@ ul.main_nav li {
 }
 
 .img_desktop>img {
-    width: 645;
+    width: 645px;
     height: auto;
 }
 
-.img_desktop {
+/*.img_desktop {
     padding-right: 30px;
-}
+}*/
 
 /** кнопки навигации**/
 .button_controls {
@@ -269,7 +270,10 @@ ul.main_nav li {
     background: var(--bg-secondary-color);
     color: var(--bg-color);
 }
-
+.button_order{
+    display: flex;
+    justify-content: center;
+}
 .tabor_class {
     display: none;
     justify-content: flex-start;
@@ -277,7 +281,7 @@ ul.main_nav li {
 
 .tabor_class.visible {
     display: flex;
-
+gap: 30px;
 }
 
 /** кнопка телефона**/
@@ -410,8 +414,7 @@ ul.main_nav li {
 /** мобильная версия **/
 .mobile_icon,
 .mobile_header_log,
-.mobile_header_log_head
- {
+.mobile_header_log_head {
     display: none;
     border: 0;
     background: none;
@@ -420,11 +423,17 @@ ul.main_nav li {
 .mobile_icon {
     float: right;
 }
+.img_mobile,.mobile_menu {
+    display: none;
+}
 
 @media (max-width :375px) {
     .header_log {
         display: none;
 
+    }
+    .mobile_menu{
+        display: block;
     }
 
     .mobile_icon {
@@ -434,9 +443,17 @@ ul.main_nav li {
     .mobile_header_log_head {
         display: flex;
     }
+    .header_log_head a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
 
     .header_nav ul {
         flex-wrap: nowrap;
+    }
+
+    .header_nav {
+        overflow: auto;
     }
 
     .list_two_colomn {
@@ -456,10 +473,15 @@ ul.main_nav li {
     }
 
     .img_desktop {
+        display: none;
+    }
+
+    .img_mobile {
+        display: flex;
         padding: 0;
     }
 
-    .img_desktop img {
+    .img_mobile img {
         max-width: 100%;
         height: auto;
     }
@@ -475,13 +497,30 @@ ul.main_nav li {
     .photo_desktop {
         display: none;
     }
+
+    body{
+        --base-font-size: 16px;
+        --base-line-height: 14px;
+        --p-font-size: 28px;
+        --phone-size: 28px;
+        --phone-entry-size: 14px;
+    }
+
+    .advantages_mobile {
+        display: flex;
+    }
+
+    .advantages {
+        flex-wrap: wrap;
+    }
 }
 
-/** планшетная **/
+/** адаптив **/
 @media (max-width :1190px) {
     .about_us {
         display: block;
     }
+
     .list_two_colomn {
         display: block;
     }
@@ -496,6 +535,14 @@ ul.main_nav li {
 
     .colomn_gorizont {
         display: block;
+    }
+
+    .button_controls {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .img_desktop>img{
+        width: 100%;
     }
 }
 
