@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="mobile_menu">
-            <button class="mobile_icon">
+            <button id="nav-menu-open" class="mobile_icon">
                 <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="33" height="3.83721" fill="#E10B20" />
                     <rect y="7.67383" width="33" height="3.83721" fill="#E10B20" />
@@ -27,52 +27,65 @@
                     и<br>сельхозтехника<br>от производителя</a>
                 </div>
             </div>
-            <div class="mobile_header_log">
-                <div><a href="#">Качество и приемлемая цена</a></div>
-                <div class="phone_header"><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a><br>
-                    <a href=”tel:+7-928-778-92-80>8-928-778-92-80</a>
-                </div>
-                <div><a href="#"><img width="22" height="22" src="./img/heder-futer-img/logos_whatsapp-icon.png"
-                            alt="logo_whatsapp">WhatsApp</a><br>
-                    <a href="#"><img width="22" height="18" src="./img/heder-futer-img/logo_mesage.png"
-                            alt="logo_mesage">mail@agro-teh.su</a>
-                </div>
 
-                <div><button>Заказать звонок</button></div>
+            <div class="row_mobile">
+                <div class="main_mobile vision">
+                        <div class="mobile_header_log">
+                            <button class="mobile_icon_close">
+                                <svg width="23" height="13" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)"
+                                        fill="#E10B20" />
+                                    <rect x="0.831299" y="19.5566" width="27.3715" height="3.8"
+                                        transform="rotate(-45 0.831299 19.5566)" fill="#E10B20" />
+                                </svg>
+                            </button>
+                            <div><a href="#">Качество и приемлемая цена</a></div>
+                            <div class="phone_header"><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a><br>
+                                <a href=”tel:+7-928-778-92-80>8-928-778-92-80</a>
+                            </div>
+                            <div><a href="#"><img width="22" height="22" src="./img/heder-futer-img/logos_whatsapp-icon.png"
+                                        alt="logo_whatsapp">WhatsApp</a><br>
+                                <a href="#"><img width="22" height="18" src="./img/heder-futer-img/logo_mesage.png"
+                                        alt="logo_mesage">mail@agro-teh.su</a>
+                            </div>
+            
+                            <div><button class="send_main">Заказать звонок</button></div>
+                        </div>
+                </div>
             </div>
 
         </div>
         <div class="contener">
             <div class="header_log">
                 <div class="header_log_head">
-                    <div><a href="#"><img width="106" height="67" src="./img/heder-futer-img/logo.png" alt="logo"></div>
-                    <div>Ангары
+                    <div class="hover_efect"><a href="#"><img width="106" height="67" src="./img/heder-futer-img/logo.png" alt="logo"></div>
+                    <div class="hover_efect">Ангары
                         и<br>сельхозтехника<br>от производителя</a>
                     </div>
                 </div>
-                <div><a href="#">Качество и приемлемая цена</a></div>
-                <div><a href="#"><img width="22" height="22" src="./img/heder-futer-img/logos_whatsapp-icon.png"
+                <div class="hover_efect"><a href="#">Качество и приемлемая цена</a></div>
+                <div class="hover_efect"><a href="#"><img width="22" height="22" src="./img/heder-futer-img/logos_whatsapp-icon.png"
                             alt="logo_whatsapp">WhatsApp</a><br>
                     <a href="#"><img width="22" height="18" src="./img/heder-futer-img/logo_mesage.png"
                             alt="logo_mesage">mail@agro-teh.su</a>
                 </div>
-                <div class="phone_header"><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a><br>
+                <div class="phone_header hover_efect"><a href=”tel:+7-928-212-22-19  >8-928-212-22-19</a><br>
                     <a href=”tel:+7-928-778-92-80>8-928-778-92-80</a>
                 </div>
-                <div><button>Заказать звонок</button></div>
+                <div class="hover_efect" ><button>Заказать звонок</button></div>
             </div>
         </div>
         <nav>
             <div class="header_nav">
                 <div class="contener">
                     <ul>
-                        <li><a href="#">АНГАРЫ</a></li>
-                        <li><a href="#">СЕЛЬХОЗТЕХНИКА</a></li>
-                        <li><a href="#">ЗАПЧАСТИ</a></li>
-                        <li><a href="#">УСЛУГИ</a></li>
-                        <li><a href="#">О КОМПАНИИ</a></li>
-                        <li><a href="#">О КОНТАКТЫ</a></li>
-                        <li><a href="#">О НАШИ РАБОТЫ</a></li>
+                        <li class="hover_efect"><a href="#">АНГАРЫ</a></li>
+                        <li class="hover_efect"><a href="./tehnika.html">СЕЛЬХОЗТЕХНИКА</a></li>
+                        <li class="hover_efect"><a href="#">ЗАПЧАСТИ</a></li>
+                        <li class="hover_efect"><a href="#">УСЛУГИ</a></li>
+                        <li class="hover_efect"><a href="#">О КОМПАНИИ</a></li>
+                        <li class="hover_efect"><a href="#">О КОНТАКТЫ</a></li>
+                        <li class="hover_efect"><a href="#">О НАШИ РАБОТЫ</a></li>
                     </ul>
                 </div>
             </div>
@@ -96,7 +109,7 @@
                     </div>
                     <p>Ваш телефон*</p>
                     <div class="img_background_number">
-                        <div class="number_entry"><input type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __">
+                        <div class="number_entry"><input type="tel" name="tel" class="phone" placeholder="+7 ( ___ ) ___ - __ - __">
                         </div>
                         <button class="send_main">Отправить<svg width="17.8" height="17" viewBox="0 0 44 44"
                                 fill="none">
@@ -165,7 +178,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -228,7 +241,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -271,7 +284,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -311,7 +324,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -359,7 +372,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -392,9 +405,9 @@
                 <div class="button_controls">
                     <button data-tab="harrows" class="button_main_color">Бороны</button>
                     <button data-tab="sprayers">Опрыскиватели</button>
-                    <button data-tab="spreader">Разбрасыватели удобрений</button>
-                    <button data-tab="ocher">Прочая сельхозтехника</button>
-                    <button data-tab="spare_parts">Запчасти и комплектующие</button>
+                    <button data-tab="spreader">Разбрасыватели<br>удобрений</button>
+                    <button data-tab="ocher">Прочая<br>сельхозтехника</button>
+                    <button data-tab="spare_parts">Запчасти и<br>комплектующие</button>
                 </div>
                 <section id="harrows" class="tabor_class visible">
                     <div class="img_desktop">
@@ -409,7 +422,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -446,7 +459,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -483,7 +496,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -520,7 +533,7 @@
                         <div>
                             <h4>Получить расчет:</h4>
                             <p>Ваш телефон*</p>
-                            <div>
+                            <div class="tabar_connection">
                                 <div class="number_entry"><input type="tel" name="tel"
                                         placeholder="+7 ( ___ ) ___ - __ - __">
                                 </div>
@@ -619,6 +632,7 @@
                             ангары
                             и сельхозтехника от производителя.
                         </p>
+                        <div class="mobile_photo"><img width="517" height="408" src="./img/home-img/director.jpg" alt="photo director"></div>
                         <div>
                             <div class="img_float_left">
                                 <img width="69" height="69" src="./img/home-img/arhievement.png" alt="logo arhievement">
@@ -656,7 +670,7 @@
                     </div>
                 </div>
 
-                <div></div>
+                <div class="mobile_photo"><img width="312" height="300" src="./img/home-img/angar-proizvodstv.jpg" alt="photo angar proizvodstvo"></div>
             </div>
         </div>
         <div class="contener">
@@ -728,7 +742,7 @@
         <div class="futer_background">
             <div class="contener">
                 <div class="futer_culomn">
-                    <div>
+                    <div class="futer_efect">
                         <div class="futer_logo">
                             <a><img src="./img/heder-futer-img/logo.png" alt=""></a>
                             <a href="">Ангары и сельхозтехника от производителя</a>
@@ -743,7 +757,7 @@
                         </div>
                         <p>347939, Россия, Ростовская область, Таганрог, ул. Пархоменко, 19</p>
                     </div>
-                    <div>
+                    <div class="futer_efect">
                         <a href="#">АНГАРЫ</a>
                         <a href="#">СЕЛЬХОЗТЕХНИКА</a>
                         <a href="#">ЗАПЧАСТИ</a>
@@ -751,7 +765,7 @@
                         <a href="#">О КОМПАНИИ</a>
                         <a href="#">КОНТАКТЫ</a>
                     </div>
-                    <div>
+                    <div class="futer_efect">
                         <h5><a href="#">НАШИ РАБОТЫ</a></h5>
                         <a href="#">Ангары бескаркасные</a>
                         <a href="#">Тентовые ангары</a>
@@ -781,9 +795,66 @@
                         <button class="phone_main"><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
                     </div>
                 </div>
+                <div class="futer_culomn_mobile">
+                    <div>
+                        <div class="futer_logo">
+                            <a><img src="./img/heder-futer-img/logo.png" alt=""></a>
+                            <a href="">Ангары и сельхозтехника от производителя</a>
+                        </div>
+                        <a href=”tel:+7-928-212-22-19>8-928-212-22-19</a><br>
+                        <a href=”tel:+7-928-778-92-80>8-928-778-92-80</a>
+                        <div class="futer_mailWatsap">
+                            <a href="#"> <img width="22" height="22" src="./img/heder-futer-img/logos_whatsapp-icon.png"
+                                    alt="logo-whatsapp">WhatsApp</a>
+                            <a href="mailto:#"> <img width="22" height="22" src="./img/heder-futer-img/logo_mesage.png"
+                                    alt="logo-mesage">mail@agro-teh.su</a>
+                        </div>
+                        <p>347939, Россия, Ростовская область, Таганрог, ул. Пархоменко, 19</p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="hover_efect"><a href="#">АНГАРЫ</a></div>
+                            <a href="#">СЕЛЬХОЗТЕХНИКА</a>
+                            <a href="#">ЗАПЧАСТИ</a>
+                            <a href="#">УСЛУГИ</a>
+                            <a href="#">О КОМПАНИИ</a>
+                            <a href="#">КОНТАКТЫ</a>
+                        </div>
+                        <div>
+                            <h5><a href="#">НАШИ РАБОТЫ</a></h5>
+                            <a href="#">Ангары бескаркасные</a>
+                            <a href="#">Тентовые ангары</a>
+                            <a href="#">Навесы и тока</a>
+                            <a href="#">Авиационные ангары</a>
+                            <a href="#">Каркасные ангары </a>
+                            <a href="#">Бороны</a>
+                            <a href="#">Разбрасыватели удобрений</a>
+                            <a href="#">Опрыскиватели </a>
+                            <a href="#">Прочая сельхозтехника </a>
+                            <a href="#">Запчасти и комплектующие </a>
+                            <a href="#">Услуги</a>
+                        </div>
+                    </div>
+                    <div class="futer_questions">
+                        <h4>Остались вопросы? ОСТАВЬТЕ ТЕЛЕФОН-ПЕРЕЗВОНИМ:</h4>
+                        <p>Ваш телефон*</p>
+                        <div class="number_entry"><input type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __">
+                        </div>
+                        <button class="send_main">Отправить<svg width="17.8" height="17" viewBox="0 0 44 44"
+                                fill="none">
+                                <g filter="url(#filter0_d_45_26)">
+                                    <path
+                                        d="M13 17.6321L17.5145 19.6312L27.98 11.2713L19.7718 20.7216V25.0833L22.8499 21.6303L27.98 23.4477L30.8529 8L13 17.6321Z"
+                                        fill="white" />
+                                </g>
+                            </svg></button>
+                        <button class="phone_main"><a href=”tel:+7-928-212-22-19>8-928-212-22-19</a></button>
+                    </div>
+                </div>
             </div>
             <div></div>
         </div>
+
     </futer>
 </body>
 

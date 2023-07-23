@@ -5,15 +5,36 @@ body {
     --text-secondary-color: #828282;
     --separator-color: #828282;
     --bg-button: #E10B20;
-    --base-font-size: 16px;
-    --base-line-height: 20px;
-    --p-font-size: 48px;
-    --phone-size: 28px;
-    --phone-entry-size: 18px;
+    --base-font-size: 1rem;
+    --base-line-height: 1, 25rem;
+    --p-font-size: 3rem;
+    --phone-size: 1, 75rem;
+    --phone-entry-size: 1, 125;
+}
+body button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.phone {
+    opacity: 40%;
+    color: var(--text-color);
+    font-size: var(--phone-entry-size);
+}
+
+.hover_efect:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+.futer_efect a:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
 h4 {
-    font-size: 24px;
+    font-size: 1, 5rem;
 }
 
 html,
@@ -21,7 +42,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--bg-color);
-    font-family: "Inter-V", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Inter-V", "Montserrat", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body button {
@@ -50,7 +71,7 @@ nav ul {
 }
 
 .consultation {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 /**
@@ -66,10 +87,13 @@ nav ul{
 .header_log button {
     background-color: var(--bg-button);
     border-radius: 5px;
-    max-width: 259px;
+    color: var(--bg-color);
+    /** max-width: 259px;
     height: 65px;
     padding-right: 23px;
-    padding-left: 23px;
+    padding-left: 23px;**/
+    padding-block: 20px;
+    padding-inline: 56px;
 }
 
 .header_log a,
@@ -144,6 +168,8 @@ aside {
 
 .header_log {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .header_log_head {
@@ -159,6 +185,8 @@ aside {
 .phone_header a {
     color: var(--text-color);
     font-size: var(--phone-size);
+    font-family: "Montserrat";
+    font-weight: 600;
 }
 
 section {
@@ -270,10 +298,12 @@ ul.main_nav li {
     background: var(--bg-secondary-color);
     color: var(--bg-color);
 }
-.button_order{
+
+.button_order {
     display: flex;
     justify-content: center;
 }
+
 .tabor_class {
     display: none;
     justify-content: flex-start;
@@ -281,7 +311,20 @@ ul.main_nav li {
 
 .tabor_class.visible {
     display: flex;
-gap: 30px;
+    gap: 30px;
+}
+
+.tabar_connection {
+    display: flex;
+    gap: 5px;
+}
+
+.tabar_connection>.number_entry {
+    background-color: #B2AFAF;
+}
+
+.tabar_connection>.number_entry>input {
+    background-color: #B2AFAF;
 }
 
 /** кнопка телефона**/
@@ -302,19 +345,18 @@ gap: 30px;
     background-color: var(--bg-button);
     padding: 8px;
     border-radius: 5px;
-
+    color: var(--bg-color);
 }
 
 /** набор номера **/
 .number_entry {
     border: 2px solid transparent;
-    color: var(--text-color);
-    font-size: var(--phone-entry-size);
+    background-color: var(--bg-color);
+    border-radius: 5px;
 }
 
 .number_entry input {
-    opacity: 40%;
-    background-color: var(--bg-color);
+    border: var(--bg-color);
 }
 
 .border_telephone {
@@ -355,6 +397,7 @@ gap: 30px;
 .photo_contener {
     position: relative;
 }
+
 
 /** futer **/
 
@@ -412,9 +455,36 @@ gap: 30px;
 }
 
 /** мобильная версия **/
+.mobile_header_log {
+    margin-top: -70px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
 .mobile_icon,
-.mobile_header_log,
+/**.main_mobile,**/
 .mobile_header_log_head {
+    display: none;
+    border: 0;
+    background: none;
+}
+
+.mobile_header_log a {
+    color: var(--text-color);
+}
+
+.mobile_header_log a {
+    text-decoration: none;
+}
+
+.main_mobile {
+    display: block;
+}
+
+.vision {
     display: none;
     border: 0;
     background: none;
@@ -423,16 +493,56 @@ gap: 30px;
 .mobile_icon {
     float: right;
 }
-.img_mobile,.mobile_menu {
+
+.img_mobile,
+.mobile_menu {
+    display: none;
+}
+
+.futer_culomn_mobile {
+    display: none;
+}
+
+.mobile_icon_close {
+    float: right;
+
+}
+
+.mobile_photo {
     display: none;
 }
 
 @media (max-width :375px) {
+    .mobile_photo {
+        display: block;
+    }
+
+    .mobile_photo>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile_icon,
+    .mobile_icon_close {
+        transition: 1s;
+    }
+
+    .mobile_icon:hover,
+    .mobile_icon_close:hover {
+        transform: scale(1.2);
+    }
+
+    .contener h1 {
+        font-size: 26px;
+    }
+
     .header_log {
         display: none;
 
     }
-    .mobile_menu{
+
+    .img_background_number,
+    .mobile_menu {
         display: block;
     }
 
@@ -443,17 +553,10 @@ gap: 30px;
     .mobile_header_log_head {
         display: flex;
     }
-    .header_log_head a{
+
+    .header_log_head a {
         text-decoration: none;
         color: var(--text-color);
-    }
-
-    .header_nav ul {
-        flex-wrap: nowrap;
-    }
-
-    .header_nav {
-        overflow: auto;
     }
 
     .list_two_colomn {
@@ -498,12 +601,15 @@ gap: 30px;
         display: none;
     }
 
-    body{
+    /**body{
         --base-font-size: 16px;
         --base-line-height: 14px;
         --p-font-size: 28px;
         --phone-size: 28px;
         --phone-entry-size: 14px;
+    }**/
+    .button_order {
+        display: block;
     }
 
     .advantages_mobile {
@@ -513,10 +619,40 @@ gap: 30px;
     .advantages {
         flex-wrap: wrap;
     }
+
+    .phone_main,
+    .send_main {
+        width: 49%;
+    }
+
+    .tabar_connection {
+        flex-wrap: wrap;
+    }
+
+    .number_entry {
+        width: 96%;
+    }
+
+    .send_main>svg {
+        display: none;
+    }
 }
 
 /** адаптив **/
 @media (max-width :1190px) {
+    .tabar_connection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_nav ul {
+        flex-wrap: nowrap;
+    }
+
+    .header_nav {
+        overflow: auto;
+    }
+
     .about_us {
         display: block;
     }
@@ -531,6 +667,7 @@ gap: 30px;
 
     .tabor_class.visible {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .colomn_gorizont {
@@ -541,8 +678,99 @@ gap: 30px;
         flex-wrap: nowrap;
         overflow: auto;
     }
-    .img_desktop>img{
+
+    .img_desktop>img {
         width: 100%;
+    }
+
+    .photo_contener img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contener {
+        text-align: center;
+    }
+}
+
+@media (max-width :700px) {
+    .futer_culomn {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .futer_culomn div:nth-child(4) {
+        text-align: center;
+    }
+
+    /**.futer_culomn div:nth-of-type(1) {
+        order: ;
+      }**/
+}
+
+@media (max-width :630px) {
+
+    /**h2{
+        font-size: 30px;
+    }**/
+    html,
+    body {
+        font-size: 13px;
+    }
+
+    .futer_culomn {
+        display: none;
+    }
+
+    .futer_culomn_mobile {
+        display: grid;
+        align-content: stretch;
+    }
+
+    .futer_culomn_mobile>div {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 49px;
+    }
+
+    .futer_culomn_mobile>div>h5,
+    .futer_culomn_mobile>div>h4 {
+        margin-top: 0;
+    }
+
+    .futer_culomn_mobile {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .futer_culomn_mobile div:nth-child(4) {
+        text-align: center;
+    }
+
+    .futer_culomn_mobile>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .futer_culomn_mobile a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .futer_culomn_mobile div:nth-child(1) {
+        max-width: 240px;
+    }
+
+    .futer_culomn_mobile div:nth-child(2) {
+        max-width: 194px;
+    }
+
+    .futer_culomn_mobile div:nth-child(3) {
+        max-width: 226px
+    }
+
+    .futer_culomn_mobile div:nth-child(4) {
+        max-width: 279px;
     }
 }
 
@@ -550,6 +778,13 @@ gap: 30px;
 @font-face {
     font-family: "Inter-V";
     src: url("../fonts/Inter-V.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }

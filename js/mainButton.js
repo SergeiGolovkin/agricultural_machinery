@@ -21,3 +21,22 @@ window.addEventListener("DOMContentLoaded", function(){
         });
     });
 });
+window.addEventListener("DOMContentLoaded", function() {
+
+    const navMenuButton = document.querySelector("#nav-menu-open");
+
+    navMenuButton.addEventListener("click", function(){
+        const menu = document.querySelector(".main_mobile");
+        menu.classList.remove("vision");
+    });
+
+
+    window.addEventListener("click", function(event) {
+        if(event.target.closest("#nav-menu-open")) {
+            return;
+        };
+        const menu = document.querySelector(".main_mobile");
+        menu.classList.add("vision");
+    });
+
+});
