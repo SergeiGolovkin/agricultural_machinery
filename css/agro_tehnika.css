@@ -773,7 +773,40 @@ ul.main_nav li {
         max-width: 279px;
     }
 }
+/** страница техника**/
+.tehnika_block {
+    width: 307px;
+    height: 400px;
+    border: 2px solid #2F7B80;
+}
 
+.tehnika_block img {
+    width: 307px;
+    height: 273px;
+}
+
+.colomn_tehnika {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tehnika_block p {
+    text-align: center;
+}
+
+.tehnika_button {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.tehnika_carusel {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 /** шрифт inter**/
 @font-face {
     font-family: "Inter-V";
