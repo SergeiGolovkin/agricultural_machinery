@@ -789,7 +789,7 @@ ul.main_nav li {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
 }
 
 .tehnika_block p {
